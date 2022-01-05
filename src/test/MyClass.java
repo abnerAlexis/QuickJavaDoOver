@@ -5,7 +5,6 @@ public class MyClass {
     int i;
 
     public MyClass() {
-        i = 6;
     }
 
     public MyClass(int i) {
@@ -13,16 +12,16 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-        MyClass myClass = new MyClass(7);
- //     myClass.initialize();
-        System.out.println(myClass.i);
+        MyClass myClass = new MyClass();
+        myClass.initialize();
+        MyClass myClass1 = new MyClass();
+        System.out.println(myClass1.i);
     }
 
     public void initialize() {
         i = 5;
     }
 }
-
 
 /*
     - fields/parameters/variables
