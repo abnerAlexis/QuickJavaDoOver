@@ -2,24 +2,20 @@ package test;
 
 public class MyClass {
 
-    int i;
+    static final int i = 5;
 
     public MyClass() {
     }
 
     public MyClass(int i) {
-        this.i = i;
     }
 
     public static void main(String[] args) {
-        MyClass myClass = new MyClass();
-        myClass.initialize();
-        MyClass myClass1 = new MyClass();
-        System.out.println(myClass1.i);
+        MyClass.initialize();
+        System.out.println(i);
     }
 
-    public void initialize() {
-        i = 5;
+    public static void initialize() {
     }
 }
 
