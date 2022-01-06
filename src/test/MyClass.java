@@ -12,9 +12,12 @@ public class MyClass {
         MyClass.initialize();
         MyClass myClass = new MyClass();
         System.out.println(myClass.i);
+        System.out.println(MyConstants.LONG_WAIT);
+        System.out.println(EnumConstants.SUNDAY);
     }
 
     public static void initialize() {
+        System.out.println("I'm in initialize method.");
     }
 }
 
