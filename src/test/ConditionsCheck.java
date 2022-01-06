@@ -1,8 +1,12 @@
 package test;
 
-public class IfElseCheckClass {
+public class ConditionsCheck {
+    enum myChar {
+        A,
+        B
+    }
     public static void main(String[] args) {
-        IfElseCheckClass ie = new IfElseCheckClass();
+        ConditionsCheck ie = new ConditionsCheck();
         ie.ifElseCheckWithBoolean();
         ie.ifElseCheckWithString();
         ie.ifElseCheckWithBoolAndStr();
@@ -10,6 +14,7 @@ public class IfElseCheckClass {
         ie.forLoopCheck();
         ie.forEachLoopCheck();
         ie.whileLoopCheck();
+        ie.switchCheck();
     }
 
     public void ifElseCheckWithBoolean(){
@@ -93,6 +98,24 @@ public class IfElseCheckClass {
                 System.out.println("Breaks at 3.");
                 break;
             }
+        }
+    }
+
+    public void switchCheck() {
+        System.out.println("SWITCH check.");
+        String str = "c";
+        myChar myCurrentChar = myChar.A;
+
+        switch (myCurrentChar) {
+            case A :
+                System.out.println(myCurrentChar);
+                break;
+            case B :
+                System.out.println(myCurrentChar);
+                break;
+
+            default://if you get values from an enum, you don't need to use default case.
+                System.out.println("This is default option.");
         }
     }
 }
