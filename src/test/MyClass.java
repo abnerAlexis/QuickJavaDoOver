@@ -2,17 +2,16 @@ package test;
 
 public class MyClass {
 
-    static final int i = 5;
+    final int i;
 
     public MyClass() {
-    }
-
-    public MyClass(int i) {
+        i = 5;
     }
 
     public static void main(String[] args) {
         MyClass.initialize();
-        System.out.println(i);
+        MyClass myClass = new MyClass();
+        System.out.println(myClass.i);
     }
 
     public static void initialize() {
