@@ -9,6 +9,7 @@ public class IfElseCheckClass {
         ie.ifElseCheckWithBoolOrStr();
         ie.forLoopCheck();
         ie.forEachLoopCheck();
+        ie.whileLoopCheck();
     }
 
     public void ifElseCheckWithBoolean(){
@@ -82,5 +83,16 @@ public class IfElseCheckClass {
         }
     }
 
+    public void whileLoopCheck() {
+        System.out.println("WHILE LOOP check.");
+        int i = 5;
 
+        while (i > 0) {
+            System.out.println("i = " + i--);
+            if (i == 3) {
+                System.out.println("Breaks at 3.");
+                break;
+            }
+        }
+    }
 }
