@@ -8,6 +8,7 @@ public class IfElseCheckClass {
         ie.ifElseCheckWithBoolAndStr();
         ie.ifElseCheckWithBoolOrStr();
         ie.forLoopCheck();
+        ie.forEachLoopCheck();
     }
 
     public void ifElseCheckWithBoolean(){
@@ -62,6 +63,24 @@ public class IfElseCheckClass {
         System.out.println("FOR LOOP check.");
         for (int i = 0; i < 5; i++) {
             System.out.println("i = " + i);
+            if (i == 3) {
+                System.out.println("breaking");
+                break;
+            }
         }
     }
+
+    public void forEachLoopCheck() {
+        System.out.println("FOR EACH LOOP check.");
+        String[] myArray = {"a", "b", "c"};
+        for (String el : myArray) {
+            System.out.println(el + " ");
+            if (el.equalsIgnoreCase("b")) {
+                System.out.println("Stopped at b");
+                break;
+            }
+        }
+    }
+
+
 }
