@@ -1,7 +1,7 @@
 package test;
 
 public class MyClass {
-
+//if i is static you can not declare a value for i in constructor. It has to be in same line.
     final int i;
 
     public MyClass() {
@@ -26,5 +26,5 @@ public class MyClass {
     DATA TYPES
     There are two data types in Java
         - Primitive types - int float double boolean byte short long char
-        - Reference types - Array Class Interface String Innumeration Anotations
+        - Reference types - Array Class Interface String Innumeration Annotations
 */
