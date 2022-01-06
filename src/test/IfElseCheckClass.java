@@ -7,7 +7,7 @@ public class IfElseCheckClass {
     }
 
     public void ifElseCheck(){
-        boolean flag = true;
+        boolean flag = false;
 
         if (flag) {
             System.out.println("I'm in if.");
